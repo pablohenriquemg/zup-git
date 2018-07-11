@@ -3,39 +3,33 @@ package com.zup;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 public class Zup {
 
 	public static void main(String[] args) {
-
+		List<Person> persons = new ArrayList<>();
 		System.out.println("===================================================");
-		String password = generatePassword(6, 8);
-		System.out.println("Password: " + password);
+		// add new persons here
+		persons.add(new Person(1, "Pablo", 19, generatePassword("Pablo")));
+		persons.add(new Person(2, "Jose", 20, generatePassword("Jose")));
+		
+		// print all persons
+		persons.forEach(person -> System.out.println(person.toString()));
 		System.out.println("===================================================");
 	}
 
-	static String generatePassword(int min_length, int max_length) {
-		Random random = new Random();
-
-		String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		String lower = "abcdefghijklmnopqrstuvwxyz";
-		String numbers = "0123456789";
-		String specialChars = "!@#$%^&*(){}?";
-
-		String allChars = upper + lower + numbers + specialChars;
+	static String generatePassword(String myName) {
 
 		List<Character> letters = new ArrayList<Character>();
-		for (char c : allChars.toCharArray())
+		for (char c : myName.toCharArray()) {
 			letters.add(c);
+		}
 
-		// Inbuilt method to randomly shuffle a elements of a list
 		Collections.shuffle(letters);
 		String password = "";
 
-		// Note that size of the password is also random
-		for (int i = random.nextInt(max_length - min_length) + min_length; i > 0; --i) {
-			password += letters.get(random.nextInt(letters.size()));
+		for (char character : letters) {
+			password += character;
 		}
 
 		return password;
