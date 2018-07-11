@@ -1,0 +1,1 @@
+https://travis-ci.org/pablohenriquemg/zup-git.svg?branch=master
