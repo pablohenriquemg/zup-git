@@ -1,4 +1,3 @@
-sudo: required
 language: java
 jdk: oraclejdk8
 
@@ -6,5 +5,7 @@ cache:
   directories:
     - '$HOME/.m2/repository'
 
+install: true
 script:
-- ./mvnw clean install
+  - ./mvnw clean install
+  - bash <(curl -s https://codecov.io/bash)
