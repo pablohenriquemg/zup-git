@@ -1,1 +1,1 @@
-https://travis-ci.org/pablohenriquemg/zup-git.svg?branch=master
+[![Build Status](https://travis-ci.org/pablohenriquemg/zup-git.svg?branch=master)](https://travis-ci.org/pablohenriquemg/zup-git)
