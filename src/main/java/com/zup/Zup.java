@@ -14,7 +14,8 @@ public class Zup {
 		persons.add(new Person(2, "Jose", 20, generatePassword("Jose")));
 		persons.add(new Person(3, "Maria", 23, generatePassword("Maria")));
 		persons.add(new Person(4, "Alfredo", 18, generatePassword("Alfredo")));
-		persons.add(new Person(4, "Carlinhao", 22, generatePassword("Carlinhao")));
+		persons.add(new Person(6, "Carlinhao", 22, generatePassword("Carlinhao")));
+		persons.add(new Person(5, "Rivs", 31, generatePassword("Rivs")));
 
 		// print all persons
 		for (Person person : persons) {
