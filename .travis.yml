@@ -7,4 +7,4 @@ cache:
     - '$HOME/.m2/repository'
 
 script:
-- ./mvnw clean install
+- mvn install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
