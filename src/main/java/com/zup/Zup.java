@@ -7,7 +7,7 @@ import java.util.List;
 public class Zup {
 
 	public static void main(String[] args) {
-		List<Person> persons = new ArrayList<>();
+		List<Person> persons = new ArrayList<Person>();
 		System.out.println("===================================================");
 		// add new persons here
 		persons.add(new Person(1, "Pablo", 19, generatePassword("Pablo")));
