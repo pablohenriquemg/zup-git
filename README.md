@@ -8,7 +8,7 @@
 
 ## Passos
 
-  - Criar usuario no https://github.com/, dar permissao para cada usuario
+  - Criar usuario no https://github.com/ e dar permissao para cada usuario
   - Clonar projeto git
 ```sh
 $ git clone https://github.com/pablohenriquemg/zup-git.git

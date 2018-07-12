@@ -12,9 +12,11 @@ public class Zup {
 		// add new persons here
 		persons.add(new Person(1, "Pablo", 19, generatePassword("Pablo")));
 		persons.add(new Person(2, "Jose", 20, generatePassword("Jose")));
-		
+
 		// print all persons
-		persons.forEach(person -> System.out.println(person.toString()));
+		for (Person person : persons) {
+			System.out.println(person.toString());
+		}
 		System.out.println("===================================================");
 	}
 

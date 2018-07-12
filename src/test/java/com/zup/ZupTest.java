@@ -10,8 +10,8 @@ public class ZupTest {
 	@Test
 	public void shouldBeNotNull() {
 		String password = Zup.generatePassword("test");
-		int index = password.indexOf("e");
-		assertEquals(0, index);
+		int length = password.length();
+		assertEquals(4, length);
 		assertNotNull(password);
 	}
 
