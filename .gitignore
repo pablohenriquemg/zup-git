@@ -1,1 +1,14 @@
-/target/
+.classpath
+.project
+.settings/
+.metadata/
+.idea/
+*.iml
+*.iws
+.DS_Store
+log/
+bin/
+target/
+*.jar
+*.log
+*.versionsBackup
