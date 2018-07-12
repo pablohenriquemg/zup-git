@@ -1,8 +1,14 @@
 [![Build Status](https://travis-ci.org/pablohenriquemg/zup-git.svg?branch=master)](https://travis-ci.org/pablohenriquemg/zup-git)
 
+# O que iremos precisar
+
+  - Elipse - https://www.eclipse.org/neon/
+  - JDK8 - http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
+  - Git - https://git-scm.com/downloads
+
 ## Passos
 
-  - Criar usuario no github, dar permissao para cada usuario
+  - Criar usuario no https://github.com/, dar permissao para cada usuario
   - Clonar projeto git
 ```sh
 $ git clone https://github.com/pablohenriquemg/zup-git.git
